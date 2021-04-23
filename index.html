@@ -1,319 +1,64 @@
 <!DOCTYPE html>
-<html>
-<title>Éderson Fernandes | Full-stack Developer</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-@media (min-width: 601px) {
-     .my-container, .my-item-container {
-        display: flex;
-        display: -webkit-flex;
-    }
-    .my-item {
-        flex: 1 0 auto;
-        justify-content: space-around;
-    }
-}
-</style>
-<body class="w3-light-grey">
+<html lang="pt-br">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Éderson Fernandes | Desenvolvedor de Software</title>
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <style>
+        * { font-family: "Roboto", sans-serif; background-color: white; color: black}
+        .container {
+            margin: 0 auto;
+            width: 500px;
+        }
+        .header {
+            margin-top: 50px;
+            text-align: center;
+        }
+            .avatar {
+                width: 200px;
+                border-radius: 50%;
+            }
+            .title {
+                font-size: 2em;
+            }
+            .sub-title {
+                font-size: 1.25em;
+            }
+        .description {
+            margin-top: 25px;
+            text-align: justify;
+        }
+        .contact {
+            margin-top: 25px;
+            text-align: center;
+        }
+        .contact a {
+            margin: 10px;
+            text-decoration: none;
+        }
+    </style>
+<body>
+<div class="container">
+    <header class="header">
+        <img src="img/avatar.jpg" alt="Éderson Fernandes" class="avatar">
+        <h1 class="title">Éderson Fernandes</h1>
+        <h2 class="sub-title">Desenvolvedor de Software</h2>
+    </header>
 
-    <!-- Page Container -->
-    <div class="w3-content w3-margin-top" style="max-width:1400px;">
+    <article class="description">
+        <p>Mais de sete anos de experiência com desenvolvimento de software utilizando tecnologias front-end e back-end como PHP, SQL Server, JavaScript, HTML, CSS e Git. Sempre buscando novos conhecimentos, com foco na utilização das melhores práticas de programação.</p>
+        <p>Trabalhando em equipe, procuro aprender e compartilhar o máximo com meus colegas de time. Sou uma pessoa reservada e atenta, que analisa os problemas com a mente aberta, para aplicar a melhor forma de solucionar o desafio.</p>
+    </article>
 
-        <!-- The Grid -->
-        <div class="w3-row-padding my-container">
-
-            <!-- Left Column -->
-            <div class="w3-third my-item-container">
-
-                <div class="w3-third w3-white w3-text-grey w3-card-4 w3-margin-bottom my-item">
-                    <div class="w3-display-container">
-                        <img src="img/avatar.jpg" style="width:100%" alt="Avatar">
-                        <div class="w3-display-bottomleft w3-container w3-text-white">
-                            <h2>Éderson Fernandes</h2>
-                        </div>
-                    </div>
-                    <div class="w3-bar w3-teal">
-                        <a href="http://blog.edersonfernandes.com.br" class="w3-bar-item w3-button w3-col s4 m4 l4 w3-border-right">Blog</a>
-                        <a href="#projetos" class="w3-bar-item w3-button w3-col s4 m4 l4 w3-border-right">Projetos</a>
-                        <a href="http://github.com/edersonlrf" class="w3-bar-item w3-button w3-col s4 m4 l4">GitHub</a>
-                    </div>
-                    <div class="w3-container">
-                        <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Full-stack Developer</p>
-                        <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Capela de Santana, RS, Brasil</p>
-                        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>edersonluis.rf@gmail.com</p>
-                        <!-- <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>(51) 98053 0472</p> -->
-                        <hr>
-
-                        <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Habilidades</b></p>
-                        <p>Programação</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-                        </div>
-                        <p>Front-end</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-                                <div class="w3-center w3-text-white">80%</div>
-                            </div>
-                        </div>
-                        <p>Infraestrutura</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
-                        </div>
-                        <p>Mobile</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-                        </div>
-                        <p>Design & UX</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-                        </div>
-                        <p>Business</p>
-                        <div class="w3-light-grey w3-round-xlarge w3-small">
-                            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-                        </div>
-                        <br>
-
-                        <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Idiomas</b></p>
-                        <p>Português</p>
-                        <div class="w3-light-grey w3-round-xlarge">
-                            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
-                        </div>
-                        <p>Inglês</p>
-                        <div class="w3-light-grey w3-round-xlarge">
-                            <div class="w3-round-xlarge w3-teal" style="height:24px;width:55%"></div>
-                        </div>
-                        <p>Espanhol</p>
-                        <div class="w3-light-grey w3-round-xlarge">
-                            <div class="w3-round-xlarge w3-teal" style="height:24px;width:25%"></div>
-                        </div>
-                        <br>
-                    </div><br><br>
-                </div>
-
-                <!-- End Left Column -->
-            </div>
-
-            <!-- Right Column -->
-            <div class="w3-twothird">
-
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user-circle-o fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Resumo</h2>
-                    <div class="w3-container">
-                        <p class="w3-justify">Mais de quatro anos de experiência com desenvolvimento web utilizando tecnologias PHP, Framework Codeigniter, MySQL, HTML, CSS, Javascript, jQuery e Git. Sempre buscando aperfeiçoar os meus conhecimentos, visando a qualidade e otimização a partir das melhores práticas de programação.</p>
-                        <p class="w3-justify">Procuro sempre trabalhar em equipe, compartilhando meus conhecimentos e absorvendo o máximo de ensinamentos proporcionados por meus colegas de time. Sou uma pessoa reservada mas atenta, que analisa os problemas com a mente aberta, para desenvolver a melhor forma de solucionar o desafio.</p>
-                        <br>
-                    </div>
-                </div>
-
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Experiência Profissional</h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Programador / Br Supply – Suprimentos Corporativos</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Set de 2017 - <span class="w3-tag w3-teal w3-round">Atual</span></h6>
-                        <p class="w3-justify">A Br Supply é uma empresa de Suprimentos com foco em oferecer soluções múltiplas para o mercado corporativo.</p>
-                        <p class="w3-justify">Atuo como programador na equipe de TI, utilizando tecnologias como PHP, SQL Server, HTML, CSS, Javascript, jQuery e Git. Com foco no desenvolvimento das soluções tecnológicas utilizadas pela empresa para atingir os seus objetivos.</p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Programador / Segure - Segurança do Trabalho</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar de 2016 - Ago de 2017</h6>
-                        <p class="w3-justify">A Segure é uma empresa que atua no segmento de segurança do trabalho há mais de 15 anos.</p>
-                        <p class="w3-justify">Trabalhei com a equipe de programação de sistemas, utilizando tecnologias como PHP, Codeigniter, MySQL, HTML, CSS, Javascript, jQuery e Git. Sempre buscando aprimorar os meus conhecimentos para proporcionar os melhores resultados para a empresa.</p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Estagiário de Programação / Ergoseg - Ergonomia do Trabalho</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar de 2014 - Mar de 2016</h6>
-                        <p class="w3-justify">Ergoseg é uma empresa especializada em implantação e análise ergonômica.</p>
-                        <p class="w3-justify">Auxiliei a equipe de programação composta por 3 desenvolvedores. Onde aprimorei meus conhecimentos em PHP e MySQL, com a realização de melhorias e correções no sistema TEGIS.</p>
-                        <br>
-                    </div>
-                </div>
-
-                <div class="w3-container w3-card w3-white w3-margin-bottom">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Formação Acadêmica</h2>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Alura.com.br</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - Atual</h6>
-                        <p>Cursos Online de Tecnologia</p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Universidade Luterana do Brasil - ULBRA</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - 2019</h6>
-                        <p>Tecnólogo em Análise e Desenvolvimento de Sistemas</p>
-                        <hr>
-                    </div>
-                    <div class="w3-container">
-                        <h5 class="w3-opacity"><b>Escolas e Faculdades QI</b></h5>
-                        <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2012 - 2014</h6>
-                        <p>Técnico em Informática</p>
-                        <br>
-                    </div>
-                </div>
-
-                <!-- End Right Column -->
-            </div>
-
-            <!-- End Grid -->
-        </div>
-
-        <div class="w3-row-padding" id="#projetos">
-
-            <div class="w3-col">
-
-                <div class="w3-container w3-card w3-white">
-                    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-cogs fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Projetos</h2>
-                    <div class="w3-container">
-                        <div class="w3-row">
-                            <div class="w3-col s12 m6 l4 w3-padding">
-                                <div class="w3-card">
-                                    <header class="w3-container w3-teal">
-                                        <h3>Site Chatschool</h3>
-                                    </header>
-                                    <div class="w3-container">
-                                        <p>Desenvolvendo um site do zero com HTML e CSS.</p>
-                                    </div>
-                                    <a class="w3-button w3-block w3-dark-grey" href="https://html-006-sofn-website.herokuapp.com/">
-                                        Saiba Mais
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="w3-col s12 m6 l4 w3-padding">
-                                <div class="w3-card">
-                                    <header class="w3-container w3-teal">
-                                        <h3>Empresa LCI</h3>
-                                    </header>
-                                    <div class="w3-container">
-                                        <p>Ensinando através da prática.</p>
-                                    </div>
-                                    <a class="w3-button w3-block w3-dark-grey" href="http://ci-002-cdc-exemplos.herokuapp.com/site-institucional/">
-                                        Saiba Mais
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="w3-col s12 m6 l4 w3-padding">
-                                <div class="w3-card">
-                                    <header class="w3-container w3-teal">
-                                        <h3>Jogo de Nave</h3>
-                                    </header>
-                                    <div class="w3-container">
-                                        <p>Jogo com HTML5 e Javascript.</p>
-                                    </div>
-                                    <a class="w3-button w3-block w3-dark-grey" href="https://html-004-cdc-canvas.herokuapp.com/">
-                                        Saiba Mais
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w3-row">
-                            <div class="w3-col s12 m6 l4 w3-padding">
-                                <div class="w3-card">
-                                    <header class="w3-container w3-teal">
-                                        <h3>Encurtador de URLs</h3>
-                                    </header>
-                                    <div class="w3-container">
-                                        <p>Encurte e Compartilhe.</p>
-                                    </div>
-                                    <a class="w3-button w3-block w3-dark-grey" href="http://ci-002-cdc-exemplos.herokuapp.com/short-urls/">
-                                        Saiba Mais
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="w3-col s12 m6 l4 w3-padding">
-                                <div class="w3-card">
-                                    <header class="w3-container w3-teal">
-                                        <h3>João da Silva</h3>
-                                    </header>
-                                    <div class="w3-container">
-                                        <p>Site para portfólio online.</p>
-                                    </div>
-                                    <a class="w3-button w3-block w3-dark-grey" href="https://html-002-a-biografia.herokuapp.com/">
-                                        Saiba Mais
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="w3-col s12 m6 l4 w3-padding">
-                                <div class="w3-card">
-                                    <header class="w3-container w3-teal">
-                                        <h3>Memory Flash Game</h3>
-                                    </header>
-                                    <div class="w3-container">
-                                        <p>Estude com cartões educativos e jogo da memória.</p>
-                                    </div>
-                                    <a class="w3-button w3-block w3-dark-grey" href="https://ulbra-ads-iai-projeto.herokuapp.com/">
-                                        Saiba Mais
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="w3-row">
-                            <div class="w3-col s12 m6 l4 w3-padding">
-                                <div class="w3-card">
-                                    <header class="w3-container w3-teal">
-                                        <h3>App - Só de Bergamota</h3>
-                                    </header>
-                                    <div class="w3-container">
-                                        <p>Aplicativos multiplataforma.</p>
-                                    </div>
-                                    <a class="w3-button w3-block w3-dark-grey" href="https://play.google.com/store/apps/details?id=br.com.edersonfernandes.bergamotapp">
-                                        Saiba Mais
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="w3-col s12 m6 l4 w3-padding">
-                                <div class="w3-card">
-                                    <header class="w3-container w3-teal">
-                                        <h3>AluraConf</h3>
-                                    </header>
-                                    <div class="w3-container">
-                                        <p>Muito conteúdo: do frontend ao backend.</p>
-                                    </div>
-                                    <a class="w3-button w3-block w3-dark-grey" href="https://html-003-a-aluraconf.herokuapp.com/">
-                                        Saiba Mais
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="w3-col s12 m6 l4 w3-padding">
-                                <div class="w3-card">
-                                    <header class="w3-container w3-teal">
-                                        <h3>Contatooh</h3>
-                                    </header>
-                                    <div class="w3-container">
-                                        <p>Gerenciador de contatos usando uma stack MEAN.</p>
-                                    </div>
-                                    <a class="w3-button w3-block w3-dark-grey" href="https://mean-001-cdc-contatooh.herokuapp.com/">
-                                        Saiba Mais
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <br>
-                        <br>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- End Page Container -->
-    </div>
-
-    <footer class="w3-container w3-teal w3-center w3-margin-top">
-        <p>Siga-me</p>
-        <a href="https://www.linkedin.com/in/edersonlrf/"><i class="fa fa-linkedin w3-hover-opacity w3-large w3-margin-right"></i></a>
-        <a href="https://twitter.com/edersonlrf"><i class="fa fa-twitter w3-hover-opacity w3-large w3-margin-right"></i></a>
-        <a href="https://www.facebook.com/edersonlrf"><i class="fa fa-facebook-official w3-hover-opacity w3-large w3-margin-right"></i></a>
-        <a href="https://www.instagram.com/edersonlrf/"><i class="fa fa-instagram w3-hover-opacity w3-large"></i></a>
-        <br><br>
-        <!-- <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p> -->
+    <footer class="contact">
+        <a href="https://www.linkedin.com/in/edersonlrf/"><i class="fa fa-linkedin fa-2x"></i></a>
+        <a href="https://twitter.com/edersonlrf"><i class="fa fa-twitter fa-2x"></i></a>
+        <a href="https://www.facebook.com/edersonlrf"><i class="fa fa-facebook-official fa-2x"></i></a>
+        <a href="https://www.instagram.com/edersonlrf/"><i class="fa fa-instagram fa-2x"></i></a>
     </footer>
-
+</div>
 </body>
 </html>
