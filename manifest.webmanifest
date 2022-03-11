@@ -2,7 +2,7 @@
     "name": "Ederson Fernandes",
     "short_name": "edersonlrf",
     "start_url": ".",
-    "display": "standalone",
+    "display": "fullscreen",
     "background_color": "#fff",
     "prefer_related_applications": true,
     "description": "Éderson Fernandes | Desenvolvedor de Software",
