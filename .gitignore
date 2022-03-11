@@ -1,3 +1,5 @@
+projects/*
+!projects/index.html
 
 /vendor/
 node_modules/
