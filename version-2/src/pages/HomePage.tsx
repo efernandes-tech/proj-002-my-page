@@ -11,8 +11,6 @@ import {
     Text,
     VStack,
     Image,
-    LinkOverlay,
-    LinkBox,
 } from '@chakra-ui/react';
 import { Button } from '../components/ui/button';
 import { Link as RouterLink } from 'react-router-dom';
