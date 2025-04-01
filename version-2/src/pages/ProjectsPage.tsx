@@ -17,13 +17,7 @@ const projects = [
         title: 'Blog',
         description:
             'Meu blog para compartilhar conhecimentos sobre tecnologias.',
-        link: 'https://blog.edersonfernandes.com.br',
-    },
-    {
-        title: 'EF Tools',
-        description:
-            'Um conjunto de ferramentas para desenvolvedores para tarefas do dia a dia.',
-        link: 'http://tools.edersonfernandes.com.br',
+        link: 'https://blog.edersonfernandes.tec.br',
     },
     {
         title: 'Currículo',

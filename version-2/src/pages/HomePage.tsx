@@ -97,7 +97,7 @@ const HomePage: React.FC = () => {
 
                 <SimpleGrid columns={[1, 2, 3]} gap={6} maxW="800px">
                     <ChakraLink
-                        href="https://blog.edersonfernandes.com.br"
+                        href="https://blog.edersonfernandes.tec.br"
                         style={{ textDecoration: 'none' }}
                         target="_blank"
                     >
@@ -124,34 +124,17 @@ const HomePage: React.FC = () => {
                             </Text>
                         </Box>
                     </ChakraLink>
-                    <ChakraLink
-                        href="http://tools.edersonfernandes.com.br"
-                        style={{ textDecoration: 'none' }}
-                        target="_blank"
-                    >
-                        <Box
-                            p={6}
-                            borderWidth="1px"
-                            borderRadius="lg"
-                            boxShadow="md"
-                            bg={isDark ? 'gray.700' : 'white'}
-                            _hover={{
-                                transform: 'scale(1.05)',
-                                transition: '0.3s',
-                            }}
-                        >
-                            <Heading as="h3" size="md" mb={2}>
-                                EF Tools
-                            </Heading>
-                            <Text
-                                fontSize="sm"
-                                color={isDark ? 'gray.400' : 'gray.600'}
-                            >
-                                Um conjunto de ferramentas para desenvolvedores
-                                para tarefas do dia a dia.
-                            </Text>
-                        </Box>
-                    </ChakraLink>
+                    <Box
+                        p={6}
+                        borderWidth="1px"
+                        borderRadius="lg"
+                        boxShadow="md"
+                        bg={isDark ? 'gray.700' : 'white'}
+                        _hover={{
+                            transform: 'scale(1.05)',
+                            transition: '0.3s',
+                        }}
+                    />
                     <Box
                         p={6}
                         borderWidth="1px"
