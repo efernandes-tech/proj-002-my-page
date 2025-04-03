@@ -41,5 +41,9 @@ npx swa login --resource-group proj-ii-my-page --app-name version-2
 -   Deploy your site to Azure
 
 ```
+npx swa build
+
+npx swa login --resource-group proj-ii-my-page --app-name version-2
+
 npx swa deploy --env production
 ```
