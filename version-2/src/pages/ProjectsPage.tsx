@@ -22,7 +22,7 @@ const projects = [
     {
         title: 'Currículo',
         description: 'Meu currículo com design limpo e responsivo.',
-        link: 'http://curriculum.edersonfernandes.com.br',
+        link: 'http://curriculum.edersonfernandes.tec.br',
     },
     {
         title: 'Meus Projetos no GitHub',
