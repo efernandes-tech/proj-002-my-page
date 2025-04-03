@@ -50,7 +50,7 @@ const HomePage: React.FC = () => {
                     color={isDark ? 'gray.300' : 'gray.600'}
                     fontWeight="bold"
                 >
-                    Desenvolvedor Full Stack | .NET | React | Azure
+                    Engenheiro de Software | .NET | React | Azure
                 </Text>
 
                 <Box textAlign="center" maxW="600px">
