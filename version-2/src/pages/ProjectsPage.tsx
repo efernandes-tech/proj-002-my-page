@@ -25,6 +25,11 @@ const projects = [
         link: 'http://curriculum.edersonfernandes.tec.br',
     },
     {
+        title: 'EF Mocks',
+        description: 'Crie e teste APIs simuladas com facilidade.',
+        link: 'https://ef-mocks.edersonfernandes.tec.br',
+    },
+    {
         title: 'Meus Projetos no GitHub',
         description: 'Meus repositórios de projetos publicados no GitHub.',
         link: 'https://github.com/efernandes-tech?tab=repositories',

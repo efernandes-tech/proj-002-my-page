@@ -124,17 +124,33 @@ const HomePage: React.FC = () => {
                             </Text>
                         </Box>
                     </ChakraLink>
-                    <Box
-                        p={6}
-                        borderWidth="1px"
-                        borderRadius="lg"
-                        boxShadow="md"
-                        bg={isDark ? 'gray.700' : 'white'}
-                        _hover={{
-                            transform: 'scale(1.05)',
-                            transition: '0.3s',
-                        }}
-                    />
+                    <ChakraLink
+                        href="https://ef-mocks.edersonfernandes.tec.br "
+                        style={{ textDecoration: 'none' }}
+                        target="_blank"
+                    >
+                        <Box
+                            p={6}
+                            borderWidth="1px"
+                            borderRadius="lg"
+                            boxShadow="md"
+                            bg={isDark ? 'gray.700' : 'white'}
+                            _hover={{
+                                transform: 'scale(1.05)',
+                                transition: '0.3s',
+                            }}
+                        >
+                            <Heading as="h3" size="md" mb={2}>
+                                EF Mocks
+                            </Heading>
+                            <Text
+                                fontSize="sm"
+                                color={isDark ? 'gray.400' : 'gray.600'}
+                            >
+                                Crie e teste APIs simuladas com facilidade.
+                            </Text>
+                        </Box>
+                    </ChakraLink>
                     <Box
                         p={6}
                         borderWidth="1px"
