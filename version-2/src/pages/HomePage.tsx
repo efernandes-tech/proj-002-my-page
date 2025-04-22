@@ -149,6 +149,7 @@ const HomePage: React.FC = () => {
                             >
                                 Crie e teste APIs simuladas com facilidade.
                             </Text>
+                            <br />
                         </Box>
                     </ChakraLink>
                     <Box
