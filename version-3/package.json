@@ -5,9 +5,10 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build": "tsc -b && vite build && npm run copy-htaccess",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "copy-htaccess": "cp .htaccess dist/.htaccess"
   },
   "dependencies": {
     "@chakra-ui/react": "^3.2.5",
