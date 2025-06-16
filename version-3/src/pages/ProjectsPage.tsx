@@ -22,12 +22,12 @@ const projects = [
     {
         title: 'Currículo',
         description: 'Meu currículo com design limpo e responsivo.',
-        link: 'http://curriculum.edersonfernandes.tec.br',
+        link: 'https://curriculum.caprover.edersonfernandes.tec.br',
     },
     {
         title: 'EF Mocks',
         description: 'Crie e teste APIs simuladas com facilidade.',
-        link: 'https://ef-mocks.edersonfernandes.tec.br',
+        link: 'https://ef-mocks.edersonfernandes.com.br',
     },
     {
         title: 'Meus Projetos no GitHub',

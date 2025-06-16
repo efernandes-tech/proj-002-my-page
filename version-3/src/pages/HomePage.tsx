@@ -178,7 +178,7 @@ const HomePage: React.FC = () => {
                         </Box>
                     </ChakraLink>
                     <ChakraLink
-                        href="https://ef-mocks.edersonfernandes.tec.br"
+                        href="https://ef-mocks.edersonfernandes.com.br"
                         style={{ textDecoration: 'none' }}
                         target="_blank"
                     >
