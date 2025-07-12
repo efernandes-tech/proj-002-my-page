@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
     Box,
     Heading,
@@ -12,33 +12,30 @@ import { Link as RouterLink } from 'react-router-dom';
 import { useColorMode } from '../components/ui/color-mode';
 import { FiArrowLeft } from 'react-icons/fi';
 
-const projects = [
-    {
-        title: 'Blog',
-        description:
-            'Meu blog para compartilhar conhecimentos sobre tecnologias.',
-        link: 'https://blog.edersonfernandes.com.br',
-    },
-    {
-        title: 'Currículo',
-        description: 'Meu currículo com design limpo e responsivo.',
-        link: 'https://curriculum.caprover.edersonfernandes.tec.br',
-    },
-    {
-        title: 'EF Mocks',
-        description: 'Crie e teste APIs simuladas com facilidade.',
-        link: 'https://ef-mocks.edersonfernandes.com.br',
-    },
-    {
-        title: 'Meus Projetos no GitHub',
-        description: 'Meus repositórios de projetos publicados no GitHub.',
-        link: 'https://github.com/efernandes-tech?tab=repositories',
-    },
-];
+interface Project {
+    title: string;
+    description: string;
+    link: string;
+}
 
 const ProjectsPage: React.FC = () => {
     const { colorMode } = useColorMode();
     const isDark = colorMode === 'dark';
+    const [projects, setProjects] = useState<Project[]>([]);
+
+    useEffect(() => {
+        const loadProjects = async () => {
+            try {
+                const response = await fetch('/projects.json');
+                const data = await response.json();
+                setProjects(data);
+            } catch (error) {
+                console.error('Error loading projects:', error);
+            }
+        };
+
+        loadProjects();
+    }, []);
 
     return (
         <Box minH="100vh" px={8} py={12} bg={isDark ? 'gray.800' : 'gray.100'}>

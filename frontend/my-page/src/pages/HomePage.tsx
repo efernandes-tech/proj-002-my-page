@@ -1,5 +1,12 @@
 import React from 'react';
-import { FiLinkedin, FiMoon, FiSun, FiGithub, FiSearch } from 'react-icons/fi';
+import {
+    FiLinkedin,
+    FiMoon,
+    FiSun,
+    FiGithub,
+    FiSearch,
+    FiMail,
+} from 'react-icons/fi';
 import { useColorMode } from '../components/ui/color-mode';
 import {
     Box,
@@ -172,7 +179,7 @@ const HomePage: React.FC = () => {
                                 fontSize="sm"
                                 color={isDark ? 'gray.400' : 'gray.600'}
                             >
-                                Bots de Trading de Criptomoedas
+                                Bots de trading e análise de criptomoedas.
                             </Text>
                             <br />
                         </Box>
@@ -233,6 +240,16 @@ const HomePage: React.FC = () => {
                         <Button colorPalette="blue" variant="outline">
                             <FiLinkedin />
                             LinkedIn
+                        </Button>
+                    </ChakraLink>
+                    <ChakraLink
+                        href="mailto:efernandes.tech@gmail.com"
+                        target="_blank"
+                        style={{ textDecoration: 'none' }}
+                    >
+                        <Button colorPalette="orange" variant="outline">
+                            <FiMail />
+                            Email
                         </Button>
                     </ChakraLink>
                 </HStack>

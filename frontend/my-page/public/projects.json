@@ -1,0 +1,38 @@
+[
+    {
+        "title": "Meus Projetos no GitHub",
+        "description": "Meus repositórios de projetos publicados no GitHub.",
+        "link": "https://github.com/efernandes-tech?tab=repositories"
+    },
+    {
+        "title": "Currículo",
+        "description": "Meu currículo com design limpo e responsivo.",
+        "link": "https://curriculum.caprover.edersonfernandes.tec.br"
+    },
+    {
+        "title": "iCanPay Store",
+        "description":
+            "Plataforma de e-commerce para comprar absolutamente nada.",
+        "link": "https://icanpay.store"
+    },
+    {
+        "title": "EF Audiobooks",
+        "description": "Plataforma para gerenciamento de audiolivros.",
+        "link": "https://ef-audiobooks.caprover.edersonfernandes.tec.br"
+    },
+    {
+        "title": "EF Kavita",
+        "description": "Servidor de livros digitais.",
+        "link": "https://ef-kavita.caprover.edersonfernandes.tec.br"
+    },
+    {
+        "title": "EF Redis Insight",
+        "description": "Interface para monitoramento e gerenciamento Redis.",
+        "link": "https://ef-redis-insight.caprover.edersonfernandes.tec.br"
+    },
+    {
+        "title": "EF Adminer",
+        "description": "Ferramenta web para administração de banco de dados.",
+        "link": "https://ef-adminer.caprover.edersonfernandes.tec.br"
+    }
+]

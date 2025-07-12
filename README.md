@@ -1,6 +1,6 @@
-# My Page Project
+# My Page
 
-A simple personal page built with **HTML**, **CSS**, and **JavaScript**.
+A simple personal page built with **React**, **Vite**, and **Chakra UI**.
 This project features a clean and responsive design, ideal for personal portfolios or basic web pages.
 
 Feel free to explore, customize, and contribute!

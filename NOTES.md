@@ -1,6 +1,6 @@
 # Notes
 
-## Build:
+## Build and Deploy on Azure:
 
 -   https://learn.microsoft.com/en-us/azure/static-web-apps/deploy-web-framework?tabs=bash&pivots=react
 
