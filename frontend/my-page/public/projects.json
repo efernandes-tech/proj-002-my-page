@@ -10,6 +10,17 @@
         "link": "https://curriculum.caprover.edersonfernandes.tec.br"
     },
     {
+        "title": "EF Pet Dex Catalog",
+        "description": "Smart contract para registro e consulta de pets.",
+        "link": "https://ef-pet-dex-catalog.caprover.edersonfernandes.tec.br/"
+    },
+    {
+        "title": "EF Blockchain",
+        "description":
+            "Implementação de blockchain educacional.",
+        "link": "https://ef-blockchain.caprover.edersonfernandes.tec.br"
+    },
+    {
         "title": "iCanPay Store",
         "description":
             "Plataforma de e-commerce para comprar absolutamente nada.",
@@ -34,5 +45,15 @@
         "title": "EF Adminer",
         "description": "Ferramenta web para administração de banco de dados.",
         "link": "https://ef-adminer.caprover.edersonfernandes.tec.br"
+    },
+    {
+        "title": "EF Timezone Converter",
+        "description": "Compare horários entre países com conversões de fuso horário precisas.",
+        "link": "https://ef-timezone-converter.lovable.app"
+    },
+    {
+        "title": "EF PDF to Base64 Converter",
+        "description": "Faça o upload de um arquivo PDF para convertê-lo em Base64 e visualizar a versão.",
+        "link": "https://ef-pdf-to-base64-converter.lovable.app"
     }
 ]
