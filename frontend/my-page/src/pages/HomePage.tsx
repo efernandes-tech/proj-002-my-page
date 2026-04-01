@@ -127,14 +127,21 @@ const HomePage: React.FC = () => {
                     Projects
                 </Heading>
 
-                <SimpleGrid columns={[1, 2, 3]} gap={6} maxW="800px">
+                <SimpleGrid columns={[1, 2, 3]} gap={6} maxW="800px" w="100%">
                     <ChakraLink
                         href="https://blog.edersonfernandes.com.br"
                         style={{ textDecoration: 'none' }}
                         target="_blank"
+                        display="block"
+                        h="100%"
+                        w="100%"
                     >
                         <Box
                             p={6}
+                            h="100%"
+                            minH="120px"
+                            display="flex"
+                            flexDirection="column"
                             borderWidth="1px"
                             borderRadius="lg"
                             boxShadow="md"
@@ -160,9 +167,16 @@ const HomePage: React.FC = () => {
                         href="https://argostraderbot.com"
                         style={{ textDecoration: 'none' }}
                         target="_blank"
+                        display="block"
+                        h="100%"
+                        w="100%"
                     >
                         <Box
                             p={6}
+                            h="100%"
+                            minH="120px"
+                            display="flex"
+                            flexDirection="column"
                             borderWidth="1px"
                             borderRadius="lg"
                             boxShadow="md"
@@ -181,16 +195,22 @@ const HomePage: React.FC = () => {
                             >
                                 Bots de trading e análise de criptomoedas.
                             </Text>
-                            <br />
                         </Box>
                     </ChakraLink>
                     <ChakraLink
-                        href="https://ef-mocks.edersonfernandes.com.br"
+                        href="https://contacoin.online"
                         style={{ textDecoration: 'none' }}
                         target="_blank"
+                        display="block"
+                        h="100%"
+                        w="100%"
                     >
                         <Box
                             p={6}
+                            h="100%"
+                            minH="120px"
+                            display="flex"
+                            flexDirection="column"
                             borderWidth="1px"
                             borderRadius="lg"
                             boxShadow="md"
@@ -201,15 +221,15 @@ const HomePage: React.FC = () => {
                             }}
                         >
                             <Heading as="h3" size="md" mb={2}>
-                                EF Mocks
+                                Conta Coin
                             </Heading>
                             <Text
                                 fontSize="sm"
                                 color={isDark ? 'gray.400' : 'gray.600'}
                             >
-                                Crie e teste APIs simuladas com facilidade.
+                                Gerencie suas finanças pessoais com controle de
+                                gastos e receitas.
                             </Text>
-                            <br />
                         </Box>
                     </ChakraLink>
                 </SimpleGrid>

@@ -11,11 +11,13 @@ import {
 import { Link as RouterLink } from 'react-router-dom';
 import { useColorMode } from '../components/ui/color-mode';
 import { FiArrowLeft } from 'react-icons/fi';
+import * as LuIcons from 'react-icons/lu';
 
 interface Project {
     title: string;
     description: string;
     link: string;
+    icon?: string;
 }
 
 const ProjectsPage: React.FC = () => {
@@ -56,7 +58,11 @@ const ProjectsPage: React.FC = () => {
                 </Heading>
 
                 <SimpleGrid columns={[1, 2, 3]} gap={6} maxW="1200px">
-                    {projects.map((project, index) => (
+                    {projects.map((project, index) => {
+                        const IconComponent = project.icon
+                            ? (LuIcons[project.icon as keyof typeof LuIcons] as React.FC<{ size?: number; color?: string }>)
+                            : null;
+                        return (
                         <Box
                             key={index}
                             p={6}
@@ -69,7 +75,13 @@ const ProjectsPage: React.FC = () => {
                                 transition: '0.3s',
                             }}
                         >
-                            <Heading as="h3" size="md" mb={2}>
+                            {IconComponent && (
+                                <IconComponent
+                                    size={28}
+                                    color={isDark ? '#81E6D9' : '#2C7A7B'}
+                                />
+                            )}
+                            <Heading as="h3" size="md" mt={IconComponent ? 2 : 0} mb={2}>
                                 {project.title}
                             </Heading>
                             <Text
@@ -87,7 +99,8 @@ const ProjectsPage: React.FC = () => {
                                 Acessar
                             </ChakraLink>
                         </Box>
-                    ))}
+                        );
+                    })}
                 </SimpleGrid>
 
                 <ChakraLink asChild fontSize="md" mt={8}>

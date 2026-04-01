@@ -2,61 +2,85 @@
   {
     "title": "Meus Projetos no GitHub",
     "description": "Meus repositórios de projetos publicados no GitHub.",
-    "link": "https://github.com/efernandes-tech?tab=repositories"
+    "link": "https://github.com/efernandes-tech?tab=repositories",
+    "icon": "LuGithub"
   },
   {
     "title": "Currículo",
     "description": "Meu currículo com design limpo e responsivo.",
-    "link": "https://curriculum.caprover.edersonfernandes.tec.br"
+    "link": "https://curriculum.caprover.edersonfernandes.tec.br",
+    "icon": "LuIdCard"
+  },
+  {
+    "title": "EF Mocks API",
+    "description": "Crie e teste APIs simuladas com facilidade.",
+    "link": "https://ef-mocks.edersonfernandes.com.br",
+    "icon": "LuBoxes"
+  },
+  {
+    "title": "EF Webhook Inspector",
+    "description": "Ferramenta para inspeção e teste de webhooks.",
+    "link": "https://ef-webhook-inspector.caprover.edersonfernandes.tec.br",
+    "icon": "LuWebhook"
   },
   {
     "title": "EF Pet Dex Catalog",
     "description": "Smart contract para registro e consulta de pets.",
-    "link": "https://ef-pet-dex-catalog.caprover.edersonfernandes.tec.br/"
+    "link": "https://ef-pet-dex-catalog.caprover.edersonfernandes.tec.br",
+    "icon": "LuPawPrint"
   },
   {
     "title": "EF Blockchain",
     "description": "Implementação de blockchain educacional.",
-    "link": "https://ef-blockchain.caprover.edersonfernandes.tec.br"
+    "link": "https://ef-blockchain.caprover.edersonfernandes.tec.br",
+    "icon": "LuLink"
   },
   {
     "title": "iCanPay Store",
     "description": "Plataforma de e-commerce para comprar absolutamente nada.",
-    "link": "https://icanpay.store"
+    "link": "https://icanpay.store",
+    "icon": "LuShoppingCart"
   },
   {
     "title": "EF Audiobooks",
     "description": "Plataforma para gerenciamento de audiolivros.",
-    "link": "https://ef-audiobooks.caprover.edersonfernandes.tec.br"
+    "link": "https://ef-audiobooks.caprover.edersonfernandes.tec.br",
+    "icon": "LuHeadphones"
   },
   {
     "title": "EF Kavita",
     "description": "Servidor de livros digitais.",
-    "link": "https://ef-kavita.caprover.edersonfernandes.tec.br"
+    "link": "https://ef-kavita.caprover.edersonfernandes.tec.br",
+    "icon": "LuBookOpen"
   },
   {
     "title": "EF Redis Insight",
     "description": "Interface para monitoramento e gerenciamento Redis.",
-    "link": "https://ef-redis-insight.caprover.edersonfernandes.tec.br"
+    "link": "https://ef-redis-insight.caprover.edersonfernandes.tec.br",
+    "icon": "LuDatabase"
   },
   {
     "title": "EF Adminer",
     "description": "Ferramenta web para administração de banco de dados.",
-    "link": "https://ef-adminer.caprover.edersonfernandes.tec.br"
+    "link": "https://ef-adminer.caprover.edersonfernandes.tec.br",
+    "icon": "LuTable"
   },
   {
     "title": "EF Timezone Converter",
     "description": "Compare horários entre países com conversões de fuso horário precisas.",
-    "link": "https://ef-timezone-converter.lovable.app"
+    "link": "https://ef-timezone-converter.lovable.app",
+    "icon": "LuClock"
   },
   {
     "title": "EF PDF to Base64 Converter",
     "description": "Faça o upload de um arquivo PDF para convertê-lo em Base64 e visualizar a versão.",
-    "link": "https://ef-pdf-to-base64-converter.lovable.app"
+    "link": "https://ef-pdf-to-base64-converter.lovable.app",
+    "icon": "LuFileScan"
   },
   {
     "title": "EF Conversor de Áudio Base64",
     "description": "Converta strings base64 em arquivos MP3 para escutar e baixar.",
-    "link": "https://efconversoraudio.lovable.app"
+    "link": "https://efconversoraudio.lovable.app",
+    "icon": "LuMusic"
   }
 ]
