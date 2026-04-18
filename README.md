@@ -7,6 +7,6 @@ Feel free to explore, customize, and contribute!
 
 ## Features
 
--   Responsive design
--   Easy to customize
--   Minimalistic and modern layout
+- Responsive design
+- Easy to customize
+- Minimalistic and modern layout
