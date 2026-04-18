@@ -1,0 +1,24 @@
+{
+  "nav": {
+    "viewMore": "View more projects",
+    "backHome": "Back to Home"
+  },
+  "home": {
+    "role": "Senior Software Engineer | React & .NET Specialist | Exploring Web3 & Blockchain",
+    "bio1": "I am a Software Engineer with solid experience building scalable, secure, and high-performance applications using technologies such as React, .NET, TypeScript, Azure, and SQL Server. I work as a full-stack developer, turning ideas into reliable solutions with a focus on quality, maintainability, and continuous delivery.",
+    "bio2": "I have implemented microservices-based architectures, improved build and deployment pipelines using Docker and Azure DevOps, and worked on enhancing the performance and stability of applications in business-critical environments.",
+    "bio3": "I have been deepening my knowledge in Web3 and Blockchain, seeking to understand the fundamentals of decentralized technologies and their practical applications.",
+    "bio4": "My work goes beyond code: I value teamwork, technical leadership, clear communication, and sharing best practices with the team.",
+    "bio5": "Open to new connections, partnerships, and opportunities in innovative and challenging environments.",
+    "projectsSection": "Projects",
+    "blogDesc": "My blog for sharing knowledge and insights about technology.",
+    "argosDesc": "Cryptocurrency trading bots and market analysis tools.",
+    "contaCoinDesc": "Manage your personal finances with expense and income tracking.",
+    "copyright": "© {{year}} Éderson Fernandes. All rights reserved."
+  },
+  "projects": {
+    "title": "Projects",
+    "access": "Visit",
+    "backHome": "Back to Home"
+  }
+}

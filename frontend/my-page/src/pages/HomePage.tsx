@@ -21,23 +21,28 @@ import {
 } from '@chakra-ui/react';
 import { Button } from '../components/ui/button';
 import { Link as RouterLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
+import LanguageToggle from '../components/LanguageToggle';
 
 const HomePage: React.FC = () => {
     const { colorMode, toggleColorMode } = useColorMode();
     const isDark = colorMode === 'dark';
+    const { t } = useTranslation();
 
     return (
         <Box minH="100vh" px={8} py={12} bg={isDark ? 'gray.800' : 'gray.100'}>
             <VStack gap={8} align="center">
-                <IconButton
-                    aria-label="Toggle Theme"
-                    rounded="full"
-                    size="lg"
-                    onClick={toggleColorMode}
-                    alignSelf="flex-end"
-                >
-                    {isDark ? <FiSun /> : <FiMoon />}
-                </IconButton>
+                <HStack alignSelf="flex-end" gap={2}>
+                    <LanguageToggle />
+                    <IconButton
+                        aria-label="Toggle Theme"
+                        rounded="full"
+                        size="lg"
+                        onClick={toggleColorMode}
+                    >
+                        {isDark ? <FiSun /> : <FiMoon />}
+                    </IconButton>
+                </HStack>
 
                 <Image
                     boxSize="200px"
@@ -57,8 +62,7 @@ const HomePage: React.FC = () => {
                     color={isDark ? 'gray.300' : 'gray.600'}
                     fontWeight="bold"
                 >
-                    Engenheiro de Software Sênior | Especialista em React & .NET
-                    | Explorando Web3 & Blockchain
+                    {t('home.role')}
                 </Text>
 
                 <Box textAlign="" maxW="600px">
@@ -68,13 +72,7 @@ const HomePage: React.FC = () => {
                         textIndent={10}
                         textAlign="justify"
                     >
-                        Sou Engenheiro de Software com sólida experiência no
-                        desenvolvimento de aplicações escaláveis, seguras e de
-                        alta performance, utilizando tecnologias como React,
-                        .NET, TypeScript, Azure e SQL Server. Atuo como
-                        desenvolvedor full stack, transformando ideias em
-                        soluções confiáveis, com foco em qualidade,
-                        manutenibilidade e entrega contínua.
+                        {t('home.bio1')}
                     </Text>
                     <Text
                         mt={4}
@@ -83,11 +81,7 @@ const HomePage: React.FC = () => {
                         textIndent={10}
                         textAlign="justify"
                     >
-                        Já implementei arquiteturas baseadas em microsserviços,
-                        colaborei na melhoria de pipelines de build e publicação
-                        com Docker e Azure DevOps, e atuei na evolução da
-                        performance e estabilidade de aplicações em ambientes
-                        críticos.
+                        {t('home.bio2')}
                     </Text>
                     <Text
                         mt={4}
@@ -96,9 +90,7 @@ const HomePage: React.FC = () => {
                         textIndent={10}
                         textAlign="justify"
                     >
-                        Tenho me aprofundado em Web3 e Blockchain, buscando
-                        compreender os fundamentos das tecnologias
-                        descentralizadas e suas aplicações práticas.
+                        {t('home.bio3')}
                     </Text>
                     <Text
                         mt={4}
@@ -107,9 +99,7 @@ const HomePage: React.FC = () => {
                         textIndent={10}
                         textAlign="justify"
                     >
-                        Minha atuação vai além do código: valorizo o trabalho em
-                        equipe, a liderança técnica, a comunicação clara e o
-                        compartilhamento de boas práticas com o time.
+                        {t('home.bio4')}
                     </Text>
                     <Text
                         mt={4}
@@ -118,13 +108,12 @@ const HomePage: React.FC = () => {
                         textIndent={10}
                         textAlign="justify"
                     >
-                        Aberto a novas conexões, parcerias e oportunidades em
-                        ambientes inovadores e desafiadores.
+                        {t('home.bio5')}
                     </Text>
                 </Box>
 
                 <Heading as="h2" size="lg" textAlign="center" mt={12}>
-                    Projects
+                    {t('home.projectsSection')}
                 </Heading>
 
                 <SimpleGrid columns={[1, 2, 3]} gap={6} maxW="800px" w="100%">
@@ -158,8 +147,7 @@ const HomePage: React.FC = () => {
                                 fontSize="sm"
                                 color={isDark ? 'gray.400' : 'gray.600'}
                             >
-                                Meu blog para compartilhar conhecimentos sobre
-                                tecnologias.
+                                {t('home.blogDesc')}
                             </Text>
                         </Box>
                     </ChakraLink>
@@ -193,7 +181,7 @@ const HomePage: React.FC = () => {
                                 fontSize="sm"
                                 color={isDark ? 'gray.400' : 'gray.600'}
                             >
-                                Bots de trading e análise de criptomoedas.
+                                {t('home.argosDesc')}
                             </Text>
                         </Box>
                     </ChakraLink>
@@ -227,8 +215,7 @@ const HomePage: React.FC = () => {
                                 fontSize="sm"
                                 color={isDark ? 'gray.400' : 'gray.600'}
                             >
-                                Gerencie suas finanças pessoais com controle de
-                                gastos e receitas.
+                                {t('home.contaCoinDesc')}
                             </Text>
                         </Box>
                     </ChakraLink>
@@ -237,7 +224,7 @@ const HomePage: React.FC = () => {
                 <ChakraLink asChild fontSize="sm">
                     <RouterLink to="/projects">
                         <FiSearch />
-                        Ver mais projetos
+                        {t('nav.viewMore')}
                     </RouterLink>
                 </ChakraLink>
 
@@ -279,8 +266,7 @@ const HomePage: React.FC = () => {
                     color={isDark ? 'gray.500' : 'gray.500'}
                     mt={12}
                 >
-                    © {new Date().getFullYear()} Éderson Fernandes. All rights
-                    reserved.
+                    {t('home.copyright', { year: new Date().getFullYear() })}
                 </Text>
             </VStack>
         </Box>
@@ -288,3 +274,4 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
+
