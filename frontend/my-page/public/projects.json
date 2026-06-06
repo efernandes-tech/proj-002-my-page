@@ -8,18 +8,10 @@
     "icon": "LuGithub"
   },
   {
-    "title": "Currículo",
-    "titleEn": "Resume",
-    "description": "Meu currículo com design limpo e responsivo.",
-    "descriptionEn": "My resume with a clean and responsive design.",
-    "link": "https://curriculum.caprover.edersonfernandes.tec.br",
-    "icon": "LuIdCard"
-  },
-  {
     "title": "EF Mocks API",
     "description": "Crie e teste APIs simuladas com facilidade.",
     "descriptionEn": "Create and test mock APIs with ease.",
-    "link": "https://ef-mocks.edersonfernandes.com.br",
+    "link": "http://ef-mocks.caprover.edersonfernandes.tec.br",
     "icon": "LuBoxes"
   },
   {

@@ -1,12 +1,5 @@
 import React from 'react';
-import {
-    FiLinkedin,
-    FiMoon,
-    FiSun,
-    FiGithub,
-    FiSearch,
-    FiMail,
-} from 'react-icons/fi';
+import { FiLinkedin, FiMoon, FiSun, FiGithub, FiMail } from 'react-icons/fi';
 import { useColorMode } from '../components/ui/color-mode';
 import {
     Box,
@@ -152,7 +145,7 @@ const HomePage: React.FC = () => {
                         </Box>
                     </ChakraLink>
                     <ChakraLink
-                        href="https://argostraderbot.com"
+                        href="https://curriculum.caprover.edersonfernandes.tec.br/"
                         style={{ textDecoration: 'none' }}
                         target="_blank"
                         display="block"
@@ -175,70 +168,54 @@ const HomePage: React.FC = () => {
                             }}
                         >
                             <Heading as="h3" size="md" mb={2}>
-                                Argos TraderBot
+                                {t('home.resumeTitle')}
                             </Heading>
                             <Text
                                 fontSize="sm"
                                 color={isDark ? 'gray.400' : 'gray.600'}
                             >
-                                {t('home.argosDesc')}
+                                {t('home.resumeDesc')}
                             </Text>
                         </Box>
                     </ChakraLink>
                     <ChakraLink
-                        href="https://contacoin.online"
+                        asChild
                         style={{ textDecoration: 'none' }}
-                        target="_blank"
                         display="block"
                         h="100%"
                         w="100%"
                     >
-                        <Box
-                            p={6}
-                            h="100%"
-                            minH="120px"
-                            display="flex"
-                            flexDirection="column"
-                            borderWidth="1px"
-                            borderRadius="lg"
-                            boxShadow="md"
-                            bg={isDark ? 'gray.700' : 'white'}
-                            _hover={{
-                                transform: 'scale(1.05)',
-                                transition: '0.3s',
-                            }}
-                        >
-                            <Heading as="h3" size="md" mb={2}>
-                                Conta Coin
-                            </Heading>
-                            <Text
-                                fontSize="sm"
-                                color={isDark ? 'gray.400' : 'gray.600'}
+                        <RouterLink to="/projects">
+                            <Box
+                                p={6}
+                                h="100%"
+                                minH="120px"
+                                display="flex"
+                                flexDirection="column"
+                                borderWidth="1px"
+                                borderRadius="lg"
+                                boxShadow="md"
+                                bg={isDark ? 'gray.700' : 'white'}
+                                _hover={{
+                                    transform: 'scale(1.05)',
+                                    transition: '0.3s',
+                                }}
                             >
-                                {t('home.contaCoinDesc')}
-                            </Text>
-                        </Box>
+                                <Heading as="h3" size="md" mb={2}>
+                                    {t('home.myProjectsTitle')}
+                                </Heading>
+                                <Text
+                                    fontSize="sm"
+                                    color={isDark ? 'gray.400' : 'gray.600'}
+                                >
+                                    {t('home.myProjectsDesc')}
+                                </Text>
+                            </Box>
+                        </RouterLink>
                     </ChakraLink>
                 </SimpleGrid>
 
-                <ChakraLink asChild fontSize="sm">
-                    <RouterLink to="/projects">
-                        <FiSearch />
-                        {t('nav.viewMore')}
-                    </RouterLink>
-                </ChakraLink>
-
                 <HStack gap={4} mt={12}>
-                    <ChakraLink
-                        href="https://github.com/efernandes-tech"
-                        target="_blank"
-                        style={{ textDecoration: 'none' }}
-                    >
-                        <Button colorPalette="teal" variant="outline">
-                            <FiGithub />
-                            GitHub
-                        </Button>
-                    </ChakraLink>
                     <ChakraLink
                         href="https://linkedin.com/in/efernandes-tech"
                         target="_blank"
@@ -247,6 +224,16 @@ const HomePage: React.FC = () => {
                         <Button colorPalette="blue" variant="outline">
                             <FiLinkedin />
                             LinkedIn
+                        </Button>
+                    </ChakraLink>
+                    <ChakraLink
+                        href="https://github.com/efernandes-tech"
+                        target="_blank"
+                        style={{ textDecoration: 'none' }}
+                    >
+                        <Button colorPalette="teal" variant="outline">
+                            <FiGithub />
+                            GitHub
                         </Button>
                     </ChakraLink>
                     <ChakraLink
@@ -274,4 +261,3 @@ const HomePage: React.FC = () => {
 };
 
 export default HomePage;
-
