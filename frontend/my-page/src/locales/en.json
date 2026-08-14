@@ -20,6 +20,7 @@
   "projects": {
     "title": "My Projects",
     "access": "Visit",
-    "backHome": "Back to Home"
+    "backHome": "Back to Home",
+    "sectionLovable": "The Others"
   }
 }
